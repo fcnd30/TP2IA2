@@ -5,6 +5,9 @@ import streamlit as st
 from PIL import Image
 import io
 import os
+import uvicorn
+from fastapi import FastAPI
+app = FastAPI()
 
 # Charger les signatures des visages
 signatures_class = np.load('FaceSignature_db.npy')
@@ -54,6 +57,7 @@ def main():
                         st.image(image_to_check, caption=f"Similaire: {filename}")
 
 if __name__ == "__main__":
+    uvicorn.run(app, host='0.0.0.0', port=8801)
     main()
 
 
