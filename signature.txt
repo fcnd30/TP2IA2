@@ -1,12 +1,1 @@
-9 % extracted
-18 % extracted
-No face found in image bebe1. Skipping...
-No face found in image bebe2. Skipping...
-45 % extracted
-54 % extracted
-63 % extracted
-72 % extracted
-81 % extracted
-90 % extracted
-100 % extracted
-Signature_db stored
+
